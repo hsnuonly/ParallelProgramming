@@ -1,0 +1,8 @@
+CC = mpicxx
+
+basic: basic.cc
+	$(CC) -O2 -o basic basic.cc
+
+.PHONY:clean
+clean:
+	rm -rf $(obj) $(exe)
